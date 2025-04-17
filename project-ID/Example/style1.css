@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #fceabb, #f8b500);
+    color: #333;
+  }
+  
+  .weather-app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .current-weather {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .temp {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .hourly-forecast h2,
+  .daily-forecast h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .hour {
+    flex: 0 0 auto;
+    background: rgba(255,255,255,0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    scroll-snap-align: start;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .day {
+    background: rgba(255,255,255,0.6);
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  
+  .sunny body {
+    background: linear-gradient(to top, #fceabb, #f8b500);
+  }
+  
+  .rainy body {
+    background: linear-gradient(to top, #bdc3c7, #2c3e50);
+  }
+  
+  .cloudy body {
+    background: linear-gradient(to top, #d7d2cc, #304352);
+  }
+  
